@@ -126,9 +126,9 @@ let size;
 size = document.getElementById('#size').value;
 
 
-function subscribe() {
-    alert("Hello " + email + "Thank for reaching out");
-    console.log(email);
+function delivery() {
+    alert("Thank for reaching out");
+    
 }
 
 let validateInput = () => {
