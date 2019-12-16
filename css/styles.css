@@ -64,11 +64,6 @@ figcaption {
     margin-top: 30px;
 }
 
-.contacts {
-    background-image: url("../images/sec/b1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .contact-overlay {
     height: inherit;
