@@ -67,14 +67,7 @@ figcaption {
 
 
 
-input[type="email"] {
-    background: transparent;
-    border: 1px solid #ffffff;
-    padding: .8em .7em;
-    border-radius: 20px;
-    outline: none !important;
-    font-size: 14px;
-}
+
 
 .click-me {
     margin-top: 20px;
