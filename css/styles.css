@@ -65,10 +65,7 @@ figcaption {
 }
 
 
-.contact-overlay {
-    height: inherit;
-    background-color: rgba(0, 0, 0, 0.7);
-}
+
 
 input[type="email"] {
     background: transparent;
