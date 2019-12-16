@@ -286,12 +286,7 @@ a {
         font-family: 'Shadows Into Light', cursive;
     }
 
-    ul > .nav-items {
-        display: inline;
-        margin-right: 20px;
-        margin-left: 12px;
-    }
-}
+
 
 @media (max-width: 991px) {
     .navbar:not(.top-nav-collapse) {
