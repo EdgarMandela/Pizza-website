@@ -1,24 +1,23 @@
 $(function () {
     $('.summary').hide();
     $('.cdata-overlay').hide();
-//Get inputs
+
     $("#checkout").click(function () {
-        // let flavour = $(".flavour option:selected").val();
+       
         let size = $("#size option:selected").val();
         let crust = $("#crust option:selected").val();
         let topping = $("#toppings option:selected").val();
         let number = $("#number").val();
         console.log(size);
 
-        //Function order
+       
         let order = ( s, c, t, n, total) => {
             return {s, c, t, n, total};
         };
 
-        //check price
+       
         let price, totalPrice;
-        // switch (flavour) {
-        //     case flavour = "vegtikka":
+        
               switch (size) {
                     case size = "small":
                         price = 350;
