@@ -223,16 +223,6 @@ a {
     font-size: 18px;
     font-weight: normal;
 }
-
-figure img {
-    height: 260px;
-    width: 260px;
-}
-
-.karibu-txt {
-    margin-top: 160px;
-}
-
 .txt {
     font-family: system-ui, cursive;
     color: black;
