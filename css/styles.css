@@ -24,12 +24,7 @@ body {
     color: rgb(223, 223, 155);
 }
 
-#piz-pap {
-    font-family: 'Courier Prime', monospace;
-    font-size: 35px;
-    font-weight: normal;
-    color: darkorange;
-}
+
 
 li {
     display: inline;
