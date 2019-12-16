@@ -3,56 +3,55 @@ $(function () {
     $('.cdata-overlay').hide();
 
     $("#checkout").click(function () {
-       
+
         let size = $("#size option:selected").val();
         let crust = $("#crust option:selected").val();
         let topping = $("#toppings option:selected").val();
         let number = $("#number").val();
         console.log(size);
 
-       
-        let order = ( s, c, t, n, total) => {
+        let order = (s, c, t, n, total) => {
             return {s, c, t, n, total};
         };
 
-       
-        let price, totalPrice;
-        
-              switch (size) {
-                    case size = "small":
-                        price = 350;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if(crust === "deep") {
-                            totalPrice = (price * number) + 200;
-                        }
-                        break;
-                    case size = "medium":
-                        price = 800;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "deep") {
-                            totalPrice = (price * number) + 200;
+        let price,
+            totalPrice;
 
-                        }
-                        break;
-                    case size = "large":
-                        price = 1200;
-                        if (crust === "thin") {
-                            totalPrice = (price * number) + 100;
-                        } else if (crust === "thick") {
-                            totalPrice = (price * number) + 150;
-                        } else if (crust === "deep") {
-                            totalPrice = (price * number) + 200;
-
-                        }
-                        break;
+        switch (size) {
+            case size = "small":
+                price = 350;
+                if (crust === "thin") {
+                    totalPrice = (price * number) + 100;
+                } else if (crust === "thick") {
+                    totalPrice = (price * number) + 150;
+                } else if (crust === "deep") {
+                    totalPrice = (price * number) + 200;
                 }
-        
+                break;
+            case size = "medium":
+                price = 800;
+                if (crust === "thin") {
+                    totalPrice = (price * number) + 100;
+                } else if (crust === "thick") {
+                    totalPrice = (price * number) + 150;
+                } else if (crust === "deep") {
+                    totalPrice = (price * number) + 200;
+
+                }
+                break;
+            case size = "large":
+                price = 1200;
+                if (crust === "thin") {
+                    totalPrice = (price * number) + 100;
+                } else if (crust === "thick") {
+                    totalPrice = (price * number) + 150;
+                } else if (crust === "deep") {
+                    totalPrice = (price * number) + 200;
+
+                }
+                break;
+        }
+
         switch (topping) {
 
             case topping = "Pepperoni":
@@ -77,11 +76,9 @@ $(function () {
                 break;
         }
 
-        
         let newOrder = order(size, crust, topping, number, totalPrice);
-        console.log(newOrder); 
+        console.log(newOrder);
 
-        
         $('.summary').slideDown(2000);
         $('.cdata-overlay').slideUp();
         $('#list').slideDown();
@@ -89,45 +86,46 @@ $(function () {
         $('.delivernot').show(1000);
 
         $('#list').text(" ");
-        $("#list").append("<br>"  + "Size :   "
-        
-            + newOrder.s + "<br>" + "Crust :     "
-            + newOrder.c + "<br>" + "Toppings :     "
-            + newOrder.t + "<br>" + " Number of pizzas :    "
-            + newOrder.n + "<br>" + "Total Price :  "
-            + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
+        $("#list")
+            .append(
+                "<br>Size :   " + newOrder.s + "<br>Crust :     " + newOrder.c + "<br>Toppings " +
+                ":     " + newOrder.t + "<br> Number of pizzas :    " + newOrder.n + "<br>Total" +
+                " Price :  " + newOrder.total + "<br><br>"
+            )
+            .css('font-family', 'system-ui')
+            .css('font-size', '24px');
     });
 
     //Deliver
     $(".deliver").click(function () {
         $('.summary').slideUp();
         $('#list').slideUp();
-        $('.summary').text("Provide location details").slideDown();
+        $('.summary')
+            .text("Provide location details")
+            .slideDown();
         $('.deliver').hide(1000);
         $('.delivernot').hide(1000);
         $('.cdata-overlay').slideDown();
     });
 
-
-    
-    $(".delivernot").click(function () {
-
-    });
+    $(".delivernot").click(function () {});
 
     $(function () {
-        $.scrollify.move('#sum-order');
+        $
+            .scrollify
+            .move('#sum-order');
     });
 });
 
-
 // validation
 let size;
-size = document.getElementById('#size').value;
-
+size = document
+    .getElementById('#size')
+    .value;
 
 function delivery() {
     alert("Thank for reaching out");
-    
+
 }
 
 let validateInput = () => {

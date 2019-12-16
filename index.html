@@ -1,162 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Gupter&display=swap" rel="stylesheet">
-   
-    <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet"type="text/css">
-    <link href="css/styles.css" rel="stylesheet"type="text/css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/scrollify.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link
+            href="https://fonts.googleapis.com/css?family=Gupter&display=swap"
+            rel="stylesheet">
 
-    <title>Pizza website</title>
-</head>
-<body>
-       
-                <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-                    ->
-                    <div class="navi">
-                        <ul class="nav-items">
-                            <li><a href="#menus">Menu</a></li>
-                            <li><a href="#order">Orders</a></li>
-                            
-                        </ul>
-                    </div>
-                </nav>
-                
-                
-                
-               
-                <div class="landing">
-                    <div class="overlay">
-                        <div id="push"></div>
-                        <div class="landing-text">
-                            
-                            <h1 id="wedo" class="text-center">We<span id="spantext">Do</span>Pizza!</h1>
-                            
-                            <h2 class="text-white text-center">You order,we deliver.</h2>
-                        </div>
-                        
-                                <br>
-                                <a href="#menus">
-                                        <br><br><br><br><br><br><br><br>
-                                        <div class="">
-                                                <button class="btn bg-info mx-auto d-block menu-btn">Click to view our Menu</button>
-                                        </div>
-                                    
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!--Start Content-->
-                
-                <div id="menus"></div>
+        <link
+            href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap"
+            rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/scrollify.js"></script>
+
+        <title>Pizza website</title>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            ->
+            <div class="navi">
+                <ul class="nav-items">
+                    <li>
+                        <a href="#menus">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#order">Orders</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div class="landing">
+            <div class="overlay">
+                <div id="push"></div>
+                <div class="landing-text">
+
+                    <h1 id="wedo" class="text-center">We<span id="spantext">Do</span>Pizza!</h1>
+
+                    <h2 class="text-white text-center">You order,we deliver.</h2>
+                </div>
+
                 <br>
-                <div class="menu col-md-12">
-                    <div class="menu-overlay">
-                        <h1 class="text-center text-white" id="menu">Menu</h1>
-                        <div class="pizza-menu row text-center">
-                            <figure class="col-sm-4">
-                                <img src="img/pizza1.jpg" alt="small-pizza" class="wiggle">
-                                <figcaption class="text-white">Smallr<br>Ksh. 350</figcaption>
-                            </figure>
-                            <figure class="col-sm-4">
-                                <img src="img/pizza2.jpg" alt="medium-pizza" class="wiggle">
-                                <figcaption class="text-white">Medium<br>Ksh. 800</figcaption>
-                            </figure>
-                            <figure class="col-sm-4">
-                                <img src="img/pizza3.jpg" alt="large-pizza" class="wiggle">
-                                <figcaption class="text-white">Large<br>Ksh. 1200</figcaption>
-                            </figure>
-                        </div>
+                <a href="#menus">
+                    <!-- <br><br><br><br><br><br><br><br> -->
+                    <div class="">
+                        <button class="btn bg-info mx-auto d-block menu-btn">Click to view our Menu</button>
                     </div>
-                </div>
-                
-                <div class="orders" id="order">
-                    <h1 class="text-center" id="order-pizza">Order Pizza</h1>
-                    <div class="form-group row">
-                        <div class="col-sm-2"></div>
-                        <div class="col-sm-8 order-overlay text-center">
-                           
-                                <label>Chose your preferred Size:</label>
-                                <select class="custom-select custom-select-md mb-3" id="size" required>
-                                    <option value="small">small @ Ksh. 350</option>
-                                    <option value="medium">Medium @ Ksh. 800</option>
-                                    <option value="large">Large @ Ksh. 1200</option>
-                                </select>
-                                <label for="crust">Choose your favorite Crust:</label>
-                                <select class="custom-select custom-select-md mb-3" id="crust" required>
-                                    <option value="thin">Thin Crust @ Ksh. 100</option>
-                                    <option value="thick">Thick Crust @ Ksh. 150</option>
-                                    <option value="deep">Deep Crust @ Ksh. 00</option>
-                                </select>
-                                <label>Select Your favourite Toppings</label>
-                                <select class="custom-select custom-select-md mb-3" id="toppings" required>
-                                    
-                                    
-                                    <option value="Pepperoni">Pepperoni @ sh. 110</option>
-                                    <option value="mushroom">Mushroom @ sh. 100</option>
-                                    <option value="Onions">Onions @ sh. 50</option>
-                                    <option value="Sausage">Sausage @ sh. 100</option>
-                                    <option value="Bacon">Bacon @ sh. 120</option>
-                                    <option value="Extra cheese">Extra cheese @ sh. 150</option>
-                                    <option value="Black olives">Black olives @ sh. 150</option>
-                                   
-                                                                    </select>
-                                <label for="number">Number of Pizza's</label>
-                                <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
-                
-                
-                            </form>
-                            <a href="#summary">
-                                <button type="submit" class="btn btn-success checkout" id="checkout">
-                                    Checkout
-                                </button>
-                            </a>
-                 
-                        </div>
-                        <div class="col-sm-2"></div>
-                    </div>
-                </div>
-                
-                <div class="order-summary" id="sum-order">
-                    <h2 class="text-center summary">Dear customer,your order summary is as follows:</h2>
-                    <ol id="list" class="text-center sum">
-                    </ol>
-                
-                
-                    <div class="cdata">
-                        <div class="customerdata row">
-                            <div class="col-sm-3"></div>
-                            <form action="" class="form-group col-sm-6 data">
-                                <button class="btn bg-info text-center d-block mx-auto go">Enter Delivery Details</button>
-                                <input type="text" class="form-control cdata" placeholder="Enter your Name:">
-                                <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
-                                <input type="text" class="form-control cdata" placeholder="Enter the location: ">
-                                
-                            </form>
-                
-                            <div class="col-sm-3"></div>
-                        </div>
-                    </div>
-                    <div class="d-block mx-auto text-center">
-                        <button class='deliver'>Confirm Delivery</button>
-                
-                    </div>
-                </div>
-                <footer>
-                        
 
-                </footer>
-                
-                
-            
-             
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+<!--Start Content-->
+
+<div id="menus"></div>
+<br>
+<div class="menu col-md-12">
+    <div class="menu-overlay">
+        <h1 class="text-center text-white" id="menu">Menu</h1>
+        <div class="pizza-menu row text-center">
+            <figure class="col-sm-4">
+                <img src="img/pizza1.jpg" alt="small-pizza" class="wiggle">
+                <figcaption class="text-white">Large<br>Ksh. 1200</figcaption>
+            </figure>
+            <figure class="col-sm-4">
+                <img src="img/giphy.webp" alt="medium-pizza" class="wiggle">
+                <figcaption class="text-white">Small<br>Ksh. 350</figcaption>
+            </figure>
+            <figure class="col-sm-4">
+                <img src="img/pizza1.jpg" alt="large-pizza" class="wiggle">
+                <figcaption class="text-white">Medium<br>Ksh. 800</figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+
+<div class="orders" id="order">
+    <h1 class="text-center" id="order-pizza">Order Pizza</h1>
+    <div class="form-group row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8 order-overlay text-center">
+
+            <label>Chose your preferred Size:</label>
+            <select
+                class="custom-select custom-select-md mb-3"
+                id="size"
+                required="required">
+                <option value="small">small @ Ksh. 350</option>
+                <option value="medium">Medium @ Ksh. 800</option>
+                <option value="large">Large @ Ksh. 1200</option>
+            </select>
+            <label for="crust">Choose your favorite Crust:</label>
+            <select
+                class="custom-select custom-select-md mb-3"
+                id="crust"
+                required="required">
+                <option value="thin">Thin Crust @ Ksh. 100</option>
+                <option value="thick">Thick Crust @ Ksh. 150</option>
+                <option value="deep">Deep Crust @ Ksh. 00</option>
+            </select>
+            <label>Select Your favourite Toppings</label>
+            <select
+                class="custom-select custom-select-md mb-3"
+                id="toppings"
+                required="required">
+
+                <option value="Pepperoni">Pepperoni @ sh. 110</option>
+                <option value="mushroom">Mushroom @ sh. 100</option>
+                <option value="Onions">Onions @ sh. 50</option>
+                <option value="Sausage">Sausage @ sh. 100</option>
+                <option value="Bacon">Bacon @ sh. 120</option>
+                <option value="Extra cheese">Extra cheese @ sh. 150</option>
+                <option value="Black olives">Black olives @ sh. 150</option>
+
+            </select>
+            <label for="number">Number of Pizza's</label>
+            <input
+                type="number"
+                class="form-control"
+                id="number"
+                placeholder="Number of pizzas"
+                min="1"
+                required="required">
+
+        </form>
+        <a href="#summary">
+            <button type="submit" class="btn btn-success checkout" id="checkout">
+                Checkout
+            </button>
+        </a>
+
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+</div>
+
+<div class="order-summary" id="sum-order">
+<h2 class="text-center summary">Dear customer,your order summary is as follows:</h2>
+<ol id="list" class="text-center sum"></ol>
+
+<div class="cdata">
+    <div class="customerdata row">
+        <div class="col-sm-3"></div>
+        <form action="" class="form-group col-sm-6 data">
+            <button class="btn bg-info text-center d-block mx-auto go">Enter Delivery Details</button>
+            <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+            <input
+                type="text"
+                class="form-control cdata"
+                placeholder="Enter your phone number: ">
+            <input
+                type="text"
+                class="form-control cdata"
+                placeholder="Enter the location: ">
+
+        </form>
+
+        <div class="col-sm-3"></div>
+    </div>
+</div>
+<div class="d-block mx-auto text-center">
+    <button class='deliver'>Confirm Delivery</button>
+
+</div>
+</div>
+<footer></footer>
+
 </body>
 </html>

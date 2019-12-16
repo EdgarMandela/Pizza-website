@@ -1,5 +1,4 @@
 
-
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -24,8 +23,6 @@ body {
 .exc {
     color: rgb(223, 223, 155);
 }
-
-
 
 li {
     display: inline;
@@ -52,22 +49,18 @@ figcaption {
     font-family: 'Oswald', serif;
 }
 
-
 #list li {
     font-size: 24px;
     font-family: system-ui, serif;
 }
 
-.order-summary h1, .summary, .contact {
+.contact,
+.order-summary h1,
+.summary {
     color: #000;
     font-family: 'Love Ya Like A Sister', cursive;
     margin-top: 30px;
 }
-
-
-
-
-
 
 .click-me {
     margin-top: 20px;
@@ -83,19 +76,25 @@ figcaption {
 }
 
 .cdata {
-    
+
     margin-top: 20px;
     margin-bottom: 15px;
-    
+
 }
-.
-/* . */
+.menu-row{
+    background: cover;
+    background-repeat: no-repeat;
+}
+
 
 .go {
     border-radius: 20px;
 }
 
-.click-me, button[type=submit], .deliver, .delivernot {
+.click-me,
+.deliver,
+.delivernot,
+button[type=submit] {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -109,7 +108,8 @@ figcaption {
     font-size: 14px;
 }
 
-.deliver, .delivernot {
+.deliver,
+.delivernot {
     margin: 10px;
 }
 
@@ -121,7 +121,7 @@ h4 {
 }
 
 #order-pizza {
-    padding: 20px 50px 20px 50px;
+    padding: 20px 50px;
     font-family: 'Love Ya Like A Sister', cursive;
 }
 
@@ -161,7 +161,7 @@ h4 {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-/*Background pic*/
+
 .landing {
     background-image: url("../img/small-medium-large-pizza.png");
     background-size: cover;
@@ -182,14 +182,6 @@ h4 {
     margin-top: 10%;
 }
 
-.landing-text h1, h2 {
-    font-family: 'Love Ya Like A Sister', cursive;
-}
-
-.landing-text h1 {
-    font-family: 'Gloria Hallelujah', cursive;
-    font-size: 60px;
-}
 
 
 a {
@@ -208,13 +200,7 @@ a {
     font-family: 'Shadows Into Light', cursive;
 }
 
-.karibu-img {
-    margin-top: 10px;
-    margin-left: 80px;
-    margin-bottom: 130px;
-    height: 400px;
-    width: 400px;
-}
+
 
 .welcome {
     padding-top: 30px;
@@ -226,10 +212,9 @@ a {
 }
 
 .fab {
-    margin: 60px 15px 0 15px;
+    margin: 60px 15px 0;
 }
 
-/* Collapse nav start*/
 .top-nav-collapse {
     background-color: #3f51b5 !important;
 }
@@ -238,13 +223,11 @@ a {
     background: transparent !important;
 }
 
-
-
 @media (max-width: 740px) {
-    html,
+    .view,
     body,
     header,
-    .view {
+    html {
         height: 1000px;
         overflow-x: hidden;
     }
@@ -253,31 +236,27 @@ a {
         padding-top: 40%;
     }
 
-   
-
     .menu-overlay {
         width: 100%;
         height: inherit;
-        
-    }
 
- 
+    }
 
     .welcome {
         padding-top: 10px;
     }
 
     .cdata {
-        padding: 10px 5px 10px 5px;
+        padding: 10px 5px;
     }
 
 }
 
 @media (min-width: 800px) and (max-width: 850px) {
-    html,
+    .view,
     body,
     header,
-    .view {
+    html {
         height: 650px;
     }
 
@@ -286,12 +265,8 @@ a {
         font-family: 'Shadows Into Light', cursive;
     }
 
-
-
-@media (max-width: 991px) {
-    .navbar:not(.top-nav-collapse) {
-        background: #3f51b5 !important;
-    }
-
-}
+    @media (max-width: 991px) {
+        .navbar:not(.top-nav-collapse) {
+            background: #3f51b5 !important;
+        }
 
