@@ -27,6 +27,7 @@ _contact me via email address:mandela0edgar@gmail.com
 _HTML, CSS, Bootstrap, JavaScript, jQuery_
 
 ##GitHub Pages Link
+https://edgarmandela.github.io/Pizza-website/
 
 
 
