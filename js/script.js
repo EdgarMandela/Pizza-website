@@ -110,12 +110,11 @@ $(function () {
     });
 
 
-    //Pick Up
+    
     $(".delivernot").click(function () {
 
     });
 
-    //Scrollify
     $(function () {
         $.scrollify.move('#sum-order');
     });
