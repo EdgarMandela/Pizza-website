@@ -101,7 +101,7 @@ $(function () {
         $('.summary').slideUp();
         $('#list').slideUp();
         $('.summary')
-            .text("Provide location details")
+            .text("Your order will be delivered to your location shortly ")
             .slideDown();
         $('.deliver').hide(1000);
         $('.delivernot').hide(1000);
@@ -117,16 +117,13 @@ $(function () {
     });
 });
 
-// validation
+
 let size;
 size = document
     .getElementById('#size')
     .value;
 
-function delivery() {
-    alert("Thank for reaching out");
 
-}
 
 let validateInput = () => {
     if (size === "") {
