@@ -1,6 +1,6 @@
 # _Pizza Order Website_
 
-#### _This website allows customer to pizza of dirrent sizes,crust and toppings._
+#### _This website allows customer to pizza of diffrent sizes,crust and toppings._
 
 #### By _**Edgar Mandela**_
 
